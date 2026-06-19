@@ -1,9 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="原形 URFORM 標誌">
-  <rect width="64" height="64" fill="#F4F1E9"/>
-  <rect x="6" y="6" width="24" height="24" fill="#D7263D"/>
-  <circle cx="46" cy="18" r="12" fill="#1A41C9"/>
-  <path d="M6 58 L18 34 L30 58 Z" fill="#141414"/>
-  <rect x="34" y="34" width="24" height="24" fill="#F4C20D"/>
-  <rect x="34" y="44" width="24" height="4" fill="#141414"/>
-  <rect x="44" y="34" width="4" height="24" fill="#141414"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="原形 URFORM"><rect width="64" height="64" fill="#211E1A"/><path d="M18 13 V39 a14 14 0 0 0 28 0 V13" fill="none" stroke="#E3DCCE" stroke-width="6"/><rect x="15" y="10" width="6" height="6" fill="#C8853C"/><rect x="43" y="10" width="6" height="6" fill="#A8552E"/></svg>
