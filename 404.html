@@ -54,5 +54,12 @@
   </div>
 </footer>
 <script src="/urform-haus/main.js"></script>
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-label="購物車" aria-hidden="true">
+  <div class="cd-head"><h2>購物車</h2><button class="cd-close" id="cartClose" aria-label="關閉購物車"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <div class="cd-body"><p class="cd-empty">您的購物車目前是空的。<br>歡迎先逛逛全部選物。</p></div>
+  <div class="cd-foot"><div class="cd-total"><span>小計</span><span>NT$ 0</span></div><a class="mc-btn" href="./shop.html">前往選購</a></div>
+</aside>
+<script src="./addon.js" defer></script>
 </body>
 </html>

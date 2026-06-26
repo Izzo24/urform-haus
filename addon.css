@@ -1,0 +1,44 @@
+/* 原形 URFORM — header 會員/購物車 + 側欄 + 會員中心(addon, industrial) */
+.menu .acct-link,.menu .cart-toggle{display:inline-flex;align-items:center;gap:.4rem;background:none;border:0;cursor:pointer;color:var(--ink,#211E1A);font:inherit;font-size:.95rem;padding:.2rem;line-height:1}
+.menu .cart-toggle{position:relative}
+.menu .acct-link svg,.menu .cart-toggle svg{width:22px;height:22px}
+.menu .acct-link:hover,.menu .cart-toggle:hover{color:#A8552E}
+.cart-badge{display:inline-flex;align-items:center;justify-content:center;min-width:17px;height:17px;padding:0 4px;background:#A8552E;color:#F2EDE3;font-size:11px;font-weight:700;border-radius:2px}
+.cart-overlay{position:fixed;inset:0;background:rgba(20,18,15,.55);opacity:0;visibility:hidden;transition:.3s;z-index:200}
+.cart-overlay.show{opacity:1;visibility:visible}
+.cart-drawer{position:fixed;top:0;right:0;height:100%;width:min(400px,92vw);background:#E3DCCE;border-left:2px solid #211E1A;transform:translateX(100%);transition:transform .35s ease;z-index:210;display:flex;flex-direction:column;color:#211E1A}
+.cart-drawer.open{transform:translateX(0)}
+.cd-head{display:flex;align-items:center;justify-content:space-between;padding:1.2rem 1.4rem;border-bottom:2px solid #211E1A}
+.cd-head h2{font-size:1.25rem;margin:0;letter-spacing:.04em}
+.cd-close{background:none;border:0;cursor:pointer;color:#211E1A;display:inline-flex;padding:.3rem}
+.cd-close svg{width:24px;height:24px}
+.cd-body{flex:1;overflow:auto;padding:1.6rem 1.4rem}
+.cd-empty{text-align:center;margin-top:2rem;line-height:1.9;color:#4F4B45}
+.cd-foot{border-top:2px solid #211E1A;padding:1.2rem 1.4rem}
+.cd-total{display:flex;justify-content:space-between;font-weight:700;margin-bottom:1rem}
+.mc-btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;background:#A8552E;color:#F2EDE3;border:2px solid #A8552E;padding:.8rem 1.6rem;cursor:pointer;transition:.2s;font:inherit;font-weight:700;letter-spacing:.04em;text-decoration:none}
+.mc-btn:hover{background:#8C4424;border-color:#8C4424}
+.cd-foot .mc-btn{width:100%}
+.mc-wrap{max-width:1180px;margin:0 auto;padding:2.4rem 24px 4rem;color:#211E1A}
+.mc-crumb{font-size:.82rem;letter-spacing:.08em;color:#6E685F;margin-bottom:1.4rem}
+.mc-crumb a{color:#6E685F}.mc-crumb a:hover{color:#A8552E}
+.mc-title{font-size:clamp(2rem,5.5vw,3.4rem);margin:0 0 .4rem;letter-spacing:.02em}
+.mc-sub{max-width:54ch;margin:0 0 2.4rem;font-size:1.08rem;color:#4F4B45}
+.mc-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem;margin-bottom:1rem}
+.mc-card{border:2px solid #211E1A;background:#D4CBBB;padding:1.8rem}
+.mc-card h2{font-size:1.3rem;margin:0 0 1.2rem;letter-spacing:.03em}
+.mc-card label{display:block;font-size:.82rem;letter-spacing:.04em;margin-bottom:1rem;color:#4F4B45}
+.mc-card input{display:block;width:100%;margin-top:.4rem;padding:.75rem .8rem;border:1px solid #211E1A;background:#F2EDE3;font:inherit;font-size:15px;color:#211E1A}
+.mc-card input:focus{outline:2px solid #A8552E;outline-offset:-2px}
+.mc-h2{font-size:clamp(1.5rem,4vw,2.2rem);margin:2.4rem 0 1.4rem}
+.mc-benefits{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
+.mc-benefit{border:1px solid rgba(33,30,26,.25);padding:1.4rem;background:#E3DCCE}
+.mc-benefit svg{width:30px;height:30px;margin-bottom:.7rem;color:#A8552E}
+.mc-benefit h3{font-size:1.05rem;margin:0 0 .4rem}
+.mc-benefit p{margin:0;font-size:.9rem;color:#4F4B45}
+.mc-orders{border:2px solid #211E1A;background:#D4CBBB;padding:2rem;text-align:center;margin-top:1.6rem}
+.mc-orders h2{margin:0 0 .6rem}.mc-orders p{margin:0 0 1.4rem;color:#4F4B45}
+.addon-toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,150%);background:#211E1A;color:#F2EDE3;padding:.9rem 1.5rem;z-index:300;transition:transform .4s;border-radius:3px}
+.addon-toast.show{transform:translate(-50%,0)}
+@media(max-width:760px){.mc-grid{grid-template-columns:1fr}.mc-benefits{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.mc-benefits{grid-template-columns:1fr}}

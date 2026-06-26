@@ -21,6 +21,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@800;900&family=Hanken+Grotesk:wght@400;500;700;800&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./styles.css">
+<link rel="stylesheet" href="./addon.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"HomeGoodsStore","name":"原形 URFORM","image":"https://izzo24.github.io/urform-haus/images/hero.webp","url":"https://izzo24.github.io/urform-haus/","telephone":"+886-2-2555-0419","email":"hello@urform.haus","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"大同區赤峰街 41 巷 7 號","addressLocality":"台北市","postalCode":"103","addressCountry":"TW"},"geo":{"@type":"GeoCoordinates","latitude":"25.0556","longitude":"121.5200"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday"],"opens":"12:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"11:00","closes":"20:00"}]}
 </script>
@@ -42,7 +43,7 @@
       <a href="./product.html">經典單品</a>
       <a href="./about.html">關於原形</a>
       <a href="./contact.html" aria-current="page">門市・聯絡</a>
-      <a href="./shop.html" class="cart">購物車 (<span data-cart-count>0</span>)</a>
+      <a class="acct-link" href="./member.html" aria-label="會員中心"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-6 8-6s8 2 8 6"/></svg><span>會員</span></a><button class="cart-toggle" type="button" aria-label="購物車" aria-haspopup="dialog"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2.4l1.6 12.4a1.5 1.5 0 0 0 1.5 1.3h8.4a1.5 1.5 0 0 0 1.5-1.2L21 8H6.4"/><circle cx="9.5" cy="20.5" r="1.2" fill="currentColor"/><circle cx="17.5" cy="20.5" r="1.2" fill="currentColor"/></svg><span class="cart-badge" aria-hidden="true">0</span></button>
     </nav>
   </div>
 </header>
@@ -119,5 +120,12 @@
   </div>
 </footer>
 <script src="./main.js"></script>
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-label="購物車" aria-hidden="true">
+  <div class="cd-head"><h2>購物車</h2><button class="cd-close" id="cartClose" aria-label="關閉購物車"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <div class="cd-body"><p class="cd-empty">您的購物車目前是空的。<br>歡迎先逛逛全部選物。</p></div>
+  <div class="cd-foot"><div class="cd-total"><span>小計</span><span>NT$ 0</span></div><a class="mc-btn" href="./shop.html">前往選購</a></div>
+</aside>
+<script src="./addon.js" defer></script>
 </body>
 </html>
